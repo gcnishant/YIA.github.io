@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400;700&display=swap');
+
+
+body {
+    background-color: #ffffff;
+    color: #131316;
+    font-family: 'Poppins', sans-serif;
+    padding: 0; 
+    margin: 0;
+}
+
+
+section {
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+    align-content: center;
+}
+
+#fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #131316;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.our-mission {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.who-we-are {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.become-a-partner {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.contact-us {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.show {
+    opacity: 1;
+}
+
+footer {
+    background-color: #131316;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
