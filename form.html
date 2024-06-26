@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YIA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header id="fixed-header">
+        <h1>Young Immigrants of America</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#our-mission">Our Mission</a></li>
+                <li><a href="index.html#who-we-are">Who We Are</a></li>
+                <li><a href="index.html#become-a-partner">Become a Partner</a></li>
+                <li><a href="index.html#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<section id="partner-interest-form" class="partner-interest-form">
+    <h1>Partner Interest Form</h1>
+    <p>Please fill out the information below and provide<br>
+        a message that states your reasons for wanting<br>
+        to become a partner.</p>
+    <br>
+    <form id="interest-form">
+        Name: <input type="text" id="FullName" placeholder="Full Name" required>
+    <br><br>
+        Email: <input type="email" id="Email" placeholder="Email" required>
+    <br><br>Phone: <input type="text" id="Phone" placeholder="+1 (717 )123-4567" required>
+    <br><br>Why did you choose us?<br>    <textarea placeholder="Message"></textarea>
+    <br><br>    <button type="submit" value="Register">Submit</button>
+    </form>
+
+</section>
+<script>
+    var form = document.getElementById('interest-form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // prevent form from auto submitting
+        alert('Thank you for your interest in becoming a partner with Young Immigrants of America.');
+
+        var FullName = document.getElementById('FullName').value
+
+        console.log(FullName)
+
+        var Email = document.getElementById('Email').value
+
+        console.log(Email)
+
+        var Phone = document.getElementById('Phone').value
+
+        console.log(Phone)
+    });
+
+
+</script>
+
+<footer>
+     <p>&copy; 2024 Young Immigrants of America. All rights reserved.</p>
+     <p>
+        <a href="FAQ.html">FAQ</a> |
+        <a href="credits.html">Credits</a>
+    </p>
+</footer>
+    
+    
+</body>
+</html>
