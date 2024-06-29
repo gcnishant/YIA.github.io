@@ -15,6 +15,7 @@ section {
     place-items:center;
     min-height: 100vh;
     align-content: center;
+    text-align: center;
 }
 
 #fixed-header {
@@ -27,7 +28,18 @@ section {
     padding: 10px 0;
     text-align: center;
     z-index: 1000; /* Ensure the header is above other content */
+    transition: padding 0.3s ease, font-size 0.3s ease; /* Add a transition for smooth change */
+
+
 }
+
+#fixed-header.smaller {
+    padding: 5px 0; /* Adjust padding for smaller size */
+    font-size: 0.9em; /* Adjust font size if needed */
+}
+
+
+
 
 nav ul {
     list-style: none;
