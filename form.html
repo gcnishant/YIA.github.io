@@ -23,50 +23,35 @@
         </nav>
 
     </header>
-
+<main>
 <section id="partner-interest-form" class="partner-interest-form">
-    <br>
-    
+    <br><br>
+        
     <h1>Partner Interest Form</h1>
     <p>Please fill out the information below and provide<br>
-        a message that states your reasons for wanting<br>
-        to become a partner.</p>
+            a message that states your reasons for wanting<br>
+            to become a partner.</p>
+
     <br>
-    <form id="interest-form">
-        Name: <input type="text" id="FullName" placeholder="Full Name" required>
-    <br><br>
-        Email: <input type="email" id="Email" placeholder="Email" required>
-    <br><br>
-        Phone: <input type="text" id="Phone" placeholder="+1 (717 )123-4567" required>
-    <br><br>
-        Why did you choose us?<br>    <textarea placeholder="Message"></textarea>
-    <br><br>    
-        <button type="submit" value="Register">Submit</button>
-    </form>
+        <form action="https://api.web3forms.com/submit" method="POST">
 
+            <input type="hidden" name="access_key" value="81979872-52f3-4ff9-a219-4d1a6ae36f0e">            
+            Name: <input type="text" name="Full_Name" placeholder="Full Name" required>
+        <br><br>
+            Email: <input type="email" name="Email" placeholder="Email" required>
+        <br><br>
+            Phone: <input type="text" name="Phone" placeholder="+1 (717 )123-4567" required>
+        <br><br>
+            Why did you choose us?<br>    <textarea name="message" placeholder="Message"></textarea>
+        <br><br>    
+            <button type="submit" value="Register">Submit</button>
+        </form>
 </section>
-<script>
-    var form = document.getElementById('interest-form');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // prevent form from auto submitting
-        alert('Thank you for your interest in becoming a partner with Young Immigrants of America.');
-
-        var FullName = document.getElementById('FullName').value
-
-        console.log(FullName)
-
-        var Email = document.getElementById('Email').value
-
-        console.log(Email)
-
-        var Phone = document.getElementById('Phone').value
-
-        console.log(Phone)
-    });
+</main>
 
 
-</script>
+
+
 
 <footer>
      <p>&copy; 2024 Young Immigrants of America. All rights reserved.</p>
@@ -75,7 +60,8 @@
         <a href="credits.html">Credits</a>
     </p>
 </footer>
-    
-    
+   
+
+
 </body>
 </html>
