@@ -6,6 +6,9 @@
     <title>YIA</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="app.js"></script>
 
 </head>
@@ -14,31 +17,69 @@
 <body>
 
     <header id="fixed-header">
-        <h1>Young Immigrants of America</h1>
+        <h1>YIA</h1>
         <nav>
             <ul>
                 <li><a href="#our-mission">Our Mission</a></li>
                 <li><a href="#who-we-are">Who We Are</a></li>
-                <li><a href="#become-a-partner">Become a Partner</a></li>
+                <li><a href="#mentorship-program">Mentorship Program</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
 
     </header>
+<main>
+
+    <section class="hero-container">
+        <div class="left-side">
+            <h1 style="font-size: 40px;">Young Immigrants of America </h1>
+
+            <p>We <span class="highlight">empower</span> youth immigrants</p>
+            <a href="#our-mission" class="button-link">Learn More</a>
+
+        </div>
+        <div class="right-side">
+        </div>
+    </section>
+    
     
 <section id="our-mission" class="our-mission">
-    <img src="https://cdn-icons-png.flaticon.com/256/11769/11769905.png" alt="Gear Icon" width="70" height="70">
+
+    <div class="mission-info">
+        <img src="https://cdn-icons-png.flaticon.com/256/11769/11769905.png" alt="Bullseye Icon" width="70" height="70">
+
+        <h1>Our Mission</h1>
+        <p>Young Immigrants of America (YIA) aim to provide  
+        support for young Immigrants to adapt to their new
+        lives in America. We support students in various 
+        fields of study and work.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Placeat incidunt magni perspiciatis eius veritatis nulla 
+        doloribus iste eligendi, alias officiis animi consequuntur
+        saepe, debitis deleniti impedit recusandae nam iure doloremque?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore 
+        maiores velit repellat fugit quibusdam animi voluptatum consequuntur
+        libero enim! Temporibus quam, suscipit a magni et adipisci fugiat 
+
+
+        </p>
     
-    <h1>Our Mission</h1>
-    <p>Young Immigrants of America (YIA) aim to provide  
-    <br>support for young Immigrants to adapt to their new
-    <br>lives in America. We support students in various 
-    <br>fields of study and work.
-    </p>
+    </div>
+
+    <div class="mission-img">
+        <div class="blob"></div>
+
+        
+    </div>
+
 </section>
 
 <section id="who-we-are" class="who-we-are">
+
+    <div class="about-us">
     <img src="https://cdn-icons-png.flaticon.com/256/476/476863.png" alt="Who we are" width="70" height="70">
+
     <h1>Who we are</h1>
     <p>We are Young Immigrants of America, a non-profit 
     <br>organization founded in 2024. The organizaiton
@@ -46,48 +87,109 @@
     <br>about helping young immigrants.
 
     </p>
+
+    </div>
+
+    <div class="about-profiles">
+        <div class="profile">
+            <img src="./Exampleimages/missionexample.jpg" alt="Founder Image">
+            <h4>Rabin Bhandari</h4>
+            <p class="highlight">Founder</p>
+        </div>
+        <div class="profile">
+            <img src="./Exampleimages/missionexample.jpg" alt="Co-Founder Image">
+            <h4>Rabin Bhandari</h4>
+            <p class="highlight">Co-Founder</p>
+        </div>
+
+    </div>
+
+
 </section>
 
-<section id="become-a-partner" class="become-a-partner">
-    <img src="https://cdn-icons-png.flaticon.com/256/1006/1006555.png" alt="Handshake" width="70" height="70">
-    <h1>Become a Partner</h1>
-    <p>If you are interested in becoming a YIA partner,
-    <br>please fill out the form below. We are actively
-    <br>looking for partners.
+<section id="mentorship-program" class="mentorship-program">
+    <h1>Mentorship Program</h1>
+    <p>We offer a mentorship program to help students
+    <br>in various fields of study. If you have any questions, 
+    <br>please fill out the form below. 
+
     <br><br>
-    <a href="form.html">Partner Interest Form</a>
+    <a href="#contact-us">Contact Us</a>
     </p>
 
 
 </section>
 
 <section id="contact-us" class="contact-us">
-    <img src="https://cdn-icons-png.flaticon.com/256/1034/1034306.png" alt="Flag Icon" width="70" height="70">
+
     <h1>Contact us</h1>
-    <p>If you have any questions regarding our mission,
-    <br>our organization, or becoming a partner, reach 
-    <br>out to us through email or phone.
-    <br><br>
-        Email: contactus@yia.com
-    <br>Phone: +1 (111) 111-1111
-
-    <br><br>
-        Have any other questions or comments? We'd love 
-    <br>to hear from you. 
-
+    
     </p>
+    <form action="https://api.web3forms.com/submit" class="form-container" method="POST">
+    <input type="hidden" name="access_key" value="81979872-52f3-4ff9-a219-4d1a6ae36f0e">
+        
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="John" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Smith" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" id="email" placeholder="6Eg6L@example.com" required>
+        </div>
+        <div class="form-group">
+            <label for="number">Phone Number</label>
+            <input id="number" type="text" name="number" placeholder="+1 (717 )123-4567" required>
+        </div>
+
+        <div class="form-group">
+            <label for="org">Organizaiton (Optional)</label>
+            <input id="org"type="text" name="org" placeholder="e.g. PHEAA" >
+        </div>
+
+        <div class="form-group">
+            <label for="contact-reason">Contact Reason</label>
+            <select id="contact-reason" name="contact-reason" required>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Mentorship Program">Mentorship Program</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-message">
+            <label for="message">Message</label>
+            <textarea id="message"name="message" placeholder="Message"></textarea>
+        </div>
+        <div class="button-container">
+            <button class="contact-button" type="submit" value="Register">Submit</button>
+        </div>
+    </form>
 
     
 
 </section>
 
+</main>
+
 
 <footer>
+    <div class ="socialicons">
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+    
+    </div>
+    
     <p>&copy; 2024 Young Immigrants of America. All rights reserved.</p>
     <p>
         <a href="FAQ.html">FAQ</a> |
         <a href="credits.html">Credits</a>
     </p>
+
 </footer>
 
 
