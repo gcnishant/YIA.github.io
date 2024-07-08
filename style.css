@@ -41,7 +41,7 @@ body {
     height:90vh;
     padding:2rem;
     height: calc(100vh - 60px);
-    background-image: url(../Exampleimages/heroimage.avif);
+    background-image: url(./Exampleimages/heroimage.jpg);
     background-size:cover;
     background-blend-mode:lighten;
     background-position: center;
@@ -112,7 +112,7 @@ section {
 
 
 .blob {
-    background-image:url(../Exampleimages/heroimage.avif);
+    background-image:url(./Exampleimages/heroimage.jpg);
     width:380px;
     height:380px;
     background-size:cover;
