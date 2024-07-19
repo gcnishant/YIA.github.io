@@ -23,3 +23,20 @@ window.addEventListener('scroll', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const words = ["empower", "inspire", "uplift"];
+    let index = 0;
+    const wordElement = document.getElementById('animated-word');
+
+    function changeWord() {
+        wordElement.classList.remove('typing');
+        setTimeout(() => {
+            wordElement.textContent = words[index];
+            wordElement.classList.add('typing');
+            index = (index + 1) % words.length;
+        }, 100);
+    }
+
+    setInterval(changeWord, 3000);
+});
+
