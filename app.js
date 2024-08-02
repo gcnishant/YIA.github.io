@@ -28,17 +28,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let index = 0;
     const wordElement = document.getElementById('animated-word');
 
-    function changeWord() {
-        wordElement.classList.remove('typing');
-        setTimeout(() => {
-            wordElement.textContent = words[index];
-            wordElement.classList.add('typing');
-            index = (index + 1) % words.length;
-        }, 100);
-    }
+    // Only proceed if wordElement exists
+    if (wordElement) {
+        function changeWord() {
+            wordElement.classList.remove('typing');
+            setTimeout(() => {
+                wordElement.textContent = words[index];
+                wordElement.classList.add('typing');
+                index = (index + 1) % words.length;
+            }, 100);
+        }
 
-    setInterval(changeWord, 3000);
+        setInterval(changeWord, 3000);
+    } else {
+        console.warn('Element with ID "animated-word" not found');
+    }
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
@@ -54,6 +60,28 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const questions = document.querySelectorAll('.question');
+    
+    questions.forEach(question => {
+        question.addEventListener('click', function() {
+            // Close all open answers
+            document.querySelectorAll('.answer').forEach(answer => {
+                answer.style.display = 'none';
+            });
+
+            // Open the clicked answer if it was previously closed
+            const answer = this.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
         });
     });
 });
