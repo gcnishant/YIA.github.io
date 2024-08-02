@@ -101,7 +101,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .hero-info {
@@ -207,7 +207,7 @@ nav ul li a:hover {
 .mission-info {
     display:flex;
     flex-direction: row;
-   /*border:1px solid black;*/
+    /*border:1px solid black;*/
     padding:2rem;
     margin-top: 5px;
     padding-top:100px;
@@ -573,7 +573,7 @@ footer a:hover {
     .mission-info {
         display:flex;
         flex-direction: row;
-        border:1px solid black;
+        /*border:1px solid black;*/
         padding:2rem;
         margin-top: 5px;
         padding-top:100px;
@@ -686,7 +686,13 @@ footer a:hover {
         transform:scale(80%);
     }
 
-
+    /*SCALE DOWN MARGIN ON HEADING*/
+    .header-logo {
+        margin-left:20px;
+    }
+    nav {
+        margin-right:10px;
+    }
 
 }
 
