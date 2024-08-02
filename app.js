@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const words = ["empower", "inspire", "uplift"];
+    const words = ["empower", "inspire"];
     let index = 0;
     const wordElement = document.getElementById('animated-word');
 
@@ -40,3 +40,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     setInterval(changeWord, 3000);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    // Toggle the navigation menu
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Close the navigation menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+});
